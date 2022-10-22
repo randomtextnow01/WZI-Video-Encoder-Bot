@@ -187,7 +187,7 @@ async def encode(filepath, message, msg):
     # Metadata Watermark
     m = await db.get_metadata_w(message.from_user.id)
     if m:
-        metadata = '-metadata title=Encoded By @PokeTide (https://t.me/PokeTide) -metadata:s:v title=Encoded By @PokeTide (https://t.me/PokeTide)  -metadata:s:a title=Encoded By @PokeTide (https://t.me/PokeTide) '
+        metadata = '-metadata title=@PokeTide -metadata:s:v title=@PokeTide -metadata:s:a title=@PokeTide '
     else:
         metadata = ''
 
@@ -209,7 +209,7 @@ async def encode(filepath, message, msg):
 
 #    ffmpeg_filter = ':'.join([
 #        'drawtext=fontfile=/app/bot/utils/watermark/font.ttf',
-#        f"text='Encoded By @PokeTide (https://t.me/PokeTide) '",
+#        f"text='@PokeTide '",
 #        f'fontcolor=white',
 #        'fontsize=main_h/20',
 #        f'x=40:y=40'
