@@ -47,7 +47,7 @@ async def start_message(app, message):
     if not c:
         return
     await AddUserToDatabase(app, message)
-    text = f"Hi {message.from_user.mention()}<a href='https://telegra.ph/file/11379aba315ba245ebc7b.jpg'>!</a> I'm VideoEncoder Bot which will do magic with your file."
+    text = f"Hi {message.from_user.mention()}<a href='https://telegra.ph/file/ca65ab01074edc558cf02.png'>!</a> I'm VideoEncoder Bot which will do magic with your file."
     await message.reply(text=text, reply_markup=start_but)
 
 
