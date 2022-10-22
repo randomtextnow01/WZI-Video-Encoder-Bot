@@ -27,7 +27,7 @@ from .database.add_user import AddUserToDatabase
 async def OpenSettings(event: Message, user_id: int):
     try:
         await event.edit(
-            text="Settings of the Bot<a href='https://telegra.ph/file/11379aba315ba245ebc7b.jpg'>!</a>",
+            text="Settings of the Bot<a href='https://telegra.ph/file/ca65ab01074edc558cf02.png'>!</a>",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton("Video", callback_data="VideoSettings"), InlineKeyboardButton(
