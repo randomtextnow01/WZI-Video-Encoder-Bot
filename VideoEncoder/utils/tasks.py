@@ -61,7 +61,7 @@ async def on_task_complete():
 
 async def handle_tasks(message, mode):
     try:
-        msg = await message.reply_text("<b>💠 Downloading...</b>")
+        msg = await message.reply_text("<b>📥 Downloading...</b>")
         if mode == 'tg':
             await tg_task(message, msg)
         elif mode == 'url':
@@ -113,7 +113,7 @@ async def batch_task(message, msg):
     else:
         await msg.edit('Something went wrong, hell!')
         return
-    await msg.edit('<b>📕 Encode Started!</b>')
+    await msg.edit('<b>🗜️ Encode Started!</b>')
     sentfiles = []
     # Encode
     for dirpath, subdir, files_ in sorted(os.walk(path)):
